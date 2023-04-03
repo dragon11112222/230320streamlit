@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 st.set_page_config(
      page_title="SNU Fintech Course",
@@ -11,9 +12,12 @@ st.set_page_config(
      }
  )
 
-st.header("Hello, Fintech!")
+st.header("Pokemon Visualization : All about Pokemon")
 
-st.subheader("Streamlit Tutorials")
+st.subheader("SNU Bigdata Fintech course 2조")
 
-st.image("./static/img/fintech.jpeg", use_column_width=True)
+st.write('고현수 남윤재 문소현 윤지영 이건준 정세용')
 
+
+image = Image.open("image/Pigeon.jpeg")
+st.image(image,width = 320)
